@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="
+        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button id="display-fon">
+            <i class="fa-solid fa-sun"></i>
+        </button>
+        <h1>
+            List Book
+        </h1>
+        <div class="form">
+            <div class="form-item" >
+                <form action="#" autocomplete="off">
+                   <div class="section">
+                    <input type="text" name="book" id="book" placeholder="Book name" required autofocus>
+                    <input type="text" name="author" id="author" placeholder="Book author" required>
+                    <button type="submit" id="add">+ Add</button>
+                </div>
+                <div class="section">
+                        <input type="text" name="conclusion" id="conclusion" placeholder="Conclusion">
+                        <input type="text" name="date" id="date" placeholder="Date read (select from the calendar)" readonly>
+                        <div class="calendar">
+                            <div class="month">
+                                <i class="fas fa-angle-left prev"></i>
+                                <div class="date">
+                                    <h4></h4>
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                                <i class="fas fa-angle-right next"></i>
+                            </div>
+                            <div class="weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="days"></div>
+                        </div>
+                        <div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    <div class="table">
+        <table id="table">
+            <thead>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Date</th>
+                <th>Conclusion</th>
+                <th style="width: 5%; text-align: center;">Options</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    </div>   
+    <script src="main.js"></script>
+</body>
+</html>
